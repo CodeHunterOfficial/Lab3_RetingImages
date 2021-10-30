@@ -40,18 +40,51 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="375dp"
-        android:layout_height="615dp"
+        android:layout_width="332dp"
+        android:layout_height="397dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/dog3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit1"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@drawable/dog3" />
+
+    <Button
+        android:id="@+id/btnlike"
+        android:layout_width="80dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:foreground="@drawable/like"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.868"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btndislike"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="16dp"
+        android:foreground="@drawable/dislike"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/dog3"
-        tools:ignore="MissingConstraints"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.875"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
